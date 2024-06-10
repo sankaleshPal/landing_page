@@ -4,10 +4,9 @@ import { useRef } from "react";
 import { useInView } from "framer-motion";
 import "./auto.css";
 
-const Services = () => {
+const Auto = () => {
 	const ref = useRef(null);
-    const isInView = useInView(ref,{once:true});
-
+	const isInView = useInView(ref, { once: true });
 
 	return (
 		<section
@@ -45,22 +44,32 @@ const Services = () => {
 								lineHeight: "1.6",
 							}}
 						>
-							Build a digital ecosystem that connects
+							Automate up-selling 
 						</h3>
 						<ul>
 							<li>
-								Connects O2O: &nbsp;
+								People buy what they see: &nbsp;
 								<small className="opacity">
-									customers reach online, customers reach offline. Make sure to
-									unify their experience with Hipalz.
+									Showcase your dishes like never before. Use images & videos to
+									clearly express your dishes.
 								</small>
 							</li>
 							<br />
 							<li>
-								Connects Menu to everything:&nbsp;
+								Help them order:&nbsp;
 								<small className="opacity">
-									Why limit digitization to a digital menu? Navigate payments,
-									loyalty, booking & coupons, and more.
+									When your customers find it difficult to order, Hipalz
+									suggestions make sure they spend more time eating and less
+									time selecting.
+								</small>
+							</li>
+							<br />
+							<li>
+								Custom Tags:&nbsp;
+								<small className="opacity">
+									Dont let them miss important things. Contains “alcohol”,
+									”nuts”, “chefs special” and more. Make customized to your
+									menu.
 								</small>
 							</li>
 						</ul>
@@ -79,4 +88,4 @@ const Services = () => {
 	);
 };
 
-export default Services;
+export default Auto;

@@ -1,13 +1,12 @@
 import Background from "../../assets/background.svg";
-import Services from "../../assets/end_section/all_services.png";
+import ServicesImg from "../../assets/end_section/all_services.png";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import "./service.css";
 
-const Auto = () => {
+const Services = () => {
 	const ref = useRef(null);
-    const isInView = useInView(ref,{once:true});
-
+	const isInView = useInView(ref, { once: true });
 
 	return (
 		<section
@@ -45,22 +44,39 @@ const Auto = () => {
 								lineHeight: "1.6",
 							}}
 						>
-							Build a digital ecosystem that connects
+							Building an Ecosystem
 						</h3>
 						<ul>
 							<li>
-								Connects O2O: &nbsp;
+								Promotional Banners: &nbsp;
 								<small className="opacity">
-									customers reach online, customers reach offline. Make sure to
-									unify their experience with Hipalz.
+									You can Feature seasonal offers, new dishes, or special events
+									through eye-catching banners within the menu interface.
 								</small>
 							</li>
 							<br />
 							<li>
-								Connects Menu to everything:&nbsp;
+								Loyalty cards:&nbsp;
 								<small className="opacity">
-									Why limit digitization to a digital menu? Navigate payments,
-									loyalty, booking & coupons, and more.
+									Incorporates loyalty programs and feedback options to build a
+									community and encourage repeat visits.
+								</small>
+							</li>
+							<br />
+							<li>
+								Real-Time Updates:&nbsp;
+								<small className="opacity">
+									Allows for real-time menu updates and announcements, keeping
+									customers informed and engaged with the latest offerings and
+									news within you mobile
+								</small>
+							</li>
+							<br />
+							<li>
+								With POS without POS :&nbsp;
+								<small className="opacity">
+									Works seamlessly with Hipalz Pos or without. Integrates easily
+									with your day to day operations.
 								</small>
 							</li>
 						</ul>
@@ -70,7 +86,7 @@ const Auto = () => {
 						className={isInView ? "fadeInLeft" : ""}
 						width={250}
 						height={250}
-						src={Services}
+						src={ServicesImg}
 						alt="Two iPhones displaying the Hipalz app"
 					/>
 				</figure>
@@ -79,4 +95,4 @@ const Auto = () => {
 	);
 };
 
-export default Auto;
+export default Services;
