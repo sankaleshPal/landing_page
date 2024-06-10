@@ -1,0 +1,20 @@
+.flex_container_service {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+
+  
+  .flex_container_service img {
+    width: 550px;
+    height: 550px;
+  }
+
+  .flex_container_service ul li {
+    color: #A1C9FF;
+  }

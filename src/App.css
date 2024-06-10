@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300,400,500,600,700,800,900&display=swap');
+
+:root {
+  --font-family-darker-grotesque: 'Darker Grotesque', sans-serif;
+  --gradient-background: linear-gradient(to right, #C53293 -4.88%, #4990FB 90.05%);
+  background-color: #010818;
+  color: #fff;
+}
+
+body {
+  font-family: var(--font-family-darker-grotesque);
+}
+
+main {
+  margin: 2rem 16vw;
+  position: relative;
+}
+
+
+.nav_bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.nav_btn {
+  background: #9855BA;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 16px;
+  scale: 1.25;
+}
+
+.title {
+  font-size: 5rem;
+  color: white;
+  background: hsla(320, 60%, 48%, 1);
+
+background: linear-gradient(90deg, hsla(320, 60%, 48%, 1) 0%, hsla(216, 96%, 64%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(320, 60%, 48%, 1) 0%, hsla(216, 96%, 64%, 1) 100%);
+
+background: -webkit-linear-gradient(270deg, hsla(320, 60%, 48%, 1) 0%, hsla(216, 96%, 64%, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+  z-index: 1;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.title_description {
+  font-size: 1.5rem;
+  color: #A1C9FF;
+  font-weight: 300;
+  position: relative;
+  z-index: 1;
+  margin-top: -3rem;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.donut {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -90%);
+  z-index: 0;
+  opacity: 0.2;
+  width: 100%;
+  height: auto;
+  max-width: 900px;
+  animation: fadeInDonut 3s linear;
+}
+.lines {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -33%);
+  z-index: 0;
+  width: 100%;
+  height: auto;
+  scale: 1;
+  max-width: 900px;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.digital_menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 900px;
+  height: 900px;
+  z-index: 2;
+  margin: -5rem auto 0 auto;
+}
+
+.digital_menu_text{
+  font-size: 1.5rem;
+  color: #BFBFBF;
+  font-weight: 300;
+  width: 100%;
+  margin: 2rem 0;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.opacity {
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  main {
+    margin:1rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDonut {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.2;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRight {
+  animation: fadeInRight 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation: zoomIn 0.75s ease-in-out;
+}
