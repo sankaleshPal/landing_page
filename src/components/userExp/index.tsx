@@ -32,7 +32,7 @@ const UserExp = () => {
 							width: "40%",
 							textAlign: "left",
 							paddingLeft: "5rem",
-							lineHeight: "1.6", // Added line height for better readability
+							lineHeight: "1.6", 
 						}}
 						className={`${isInView ? "fadeInLeft" : ""}`}
 					>
@@ -41,7 +41,7 @@ const UserExp = () => {
 								fontSize: "2rem",
 								fontWeight: "300",
 								color: "#FFFBA1",
-								lineHeight: "1.6", // Added line height for better readability
+								lineHeight: "1.6", 
 							}}
 						>
 							User Experience
