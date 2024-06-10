@@ -11,6 +11,7 @@ const Services = lazy(() => import("../src/components/services"));
 const Footer = lazy(() => import("../src/components/footer"));
 const Loader = lazy(() => import("../src/components/loader"));
 
+
 function App() {
 	return (
 		<Suspense fallback={<Loader />}>

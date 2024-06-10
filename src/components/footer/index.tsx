@@ -12,7 +12,7 @@ const Footer = () => {
 	const handleCallClick = () => {
 		alert("Call us at: +91 91779 14130");
 	};
-
+ 
 	return (
 		<section
 			style={{
