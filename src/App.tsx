@@ -11,7 +11,6 @@ const Services = lazy(() => import("../src/components/services"));
 const Footer = lazy(() => import("../src/components/footer"));
 const Loader = lazy(() => import("../src/components/loader"));
 
-
 function App() {
 	return (
 		<Suspense fallback={<Loader />}>
@@ -22,13 +21,15 @@ function App() {
 						Contact us
 					</button>
 				</section>
-				<section style={{ position: "relative" }}>
+				<section className="hide_mobile" style={{ position: "relative" }}>
 					<Suspense fallback={<Loader />}>
 						<HeroSection />
 					</Suspense>
 				</section>
 				<Suspense fallback={<Loader />}>
-					<Restaurant />
+					<div className="hide_mobile">
+						<Restaurant />
+					</div>
 					<EcoSystems />
 					<Auto />
 					<UserExp />

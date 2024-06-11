@@ -1,6 +1,6 @@
 .eco_container {
- 
   width: 100%;
+  max-width: 30rem;
   height: auto;
   position: relative;
   margin: 0 auto;
@@ -16,8 +16,8 @@
   }
   
   .flex_container_eco img {
-    width: 275px;
-    height: 325px;
+    width: 290px;
+    height: 350px;
   }
 
   .flex_container_eco ul li {
@@ -36,7 +36,7 @@
   @media (max-width: 767px) {
     .eco_container {
       background-size: auto 150%; 
-      background-position: top center; 
+      background-position: left center; 
     }
   }
 
@@ -62,6 +62,7 @@
     .eco_container {
       max-width: 1275px;
       max-height: 608px;
+      margin-top: 5rem;
     }
     .flex_container_eco {
       align-items: center;

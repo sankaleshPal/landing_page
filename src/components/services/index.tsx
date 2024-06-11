@@ -11,7 +11,6 @@ const Services = () => {
 	return (
 		<section
 			style={{
-				paddingTop: "5rem",
 				position: "relative",
 			}}
 		>

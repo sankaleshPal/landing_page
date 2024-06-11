@@ -11,7 +11,6 @@ const EcoSystems = () => {
 	return (
 		<section
 			style={{
-				paddingTop: "5rem",
 				position: "relative",
 			}}
 		>

@@ -12,8 +12,9 @@ body {
 }
 
 main {
-  margin: 2rem 16vw;
+  margin: 0;
   position: relative;
+  overflow: hidden;
 }
 
 
@@ -113,11 +114,6 @@ background: -webkit-linear-gradient(270deg, hsla(320, 60%, 48%, 1) 0%, hsla(216,
   opacity: 0.5;
 }
 
-@media (max-width: 768px) {
-  main {
-    margin:1rem;
-  }
-}
 
 @keyframes fadeIn {
   from {
@@ -200,4 +196,20 @@ background: -webkit-linear-gradient(270deg, hsla(320, 60%, 48%, 1) 0%, hsla(216,
 
 .zoomIn {
   animation: zoomIn 0.75s ease-in-out;
+}
+
+@media (max-width: 768px) {
+
+  
+  .hide_mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    margin: 2rem 18vw;
+    position: relative;
+    overflow: hidden;
+  }
 }

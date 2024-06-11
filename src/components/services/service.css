@@ -13,8 +13,9 @@
 }
 
 .flex_container_service img {
-  width: 275px;
-  height: 325px;
+  width: 360px;
+  height: 340px;
+  margin-left: -3rem;
 }
 
 .flex_container_service ul li {
@@ -51,7 +52,7 @@
 @media (max-width: 767px) {
   .service_container {
     background-size: auto 150%; 
-    background-position: top center; 
+    background-position: left center; 
   }
 }
 
@@ -61,6 +62,7 @@
   .service_container {
     max-width: 1275px;
     max-height: 608px;
+    margin-top: 5rem;
   }
   .flex_container_service {
     align-items: center;
