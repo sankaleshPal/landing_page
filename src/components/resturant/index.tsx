@@ -51,6 +51,7 @@ const Restaurant = () => {
 					<img
 						style={{
 							scale: 1.25,
+							marginLeft: "-4rem",
 						}}
 						src={RestaurantImage}
 						alt="restaurants"
@@ -78,8 +79,20 @@ const Restaurant = () => {
 			</center>
 			<center>
 				<div className="container">
-					<motion.div className="first" whileHover={{ scale: 1.125 }}>
-						<img src={Mobile} alt="two-iphones" />
+					<motion.div className="first" >
+						<video
+							style={{
+								marginTop: "1rem",
+							}}
+							width="380"
+							height="500"
+							loop
+							muted
+							autoPlay
+						>
+							<source src="/fin.mp4" type="video/mp4" />
+							Your browser does not support the video tag.
+						</video>
 						<img
 							style={{
 								marginTop: "1rem",

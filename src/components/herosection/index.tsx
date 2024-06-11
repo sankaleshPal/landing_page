@@ -15,9 +15,9 @@ function HeroSection() {
 			images.forEach((img, index) => {
 				const imageElement = img as HTMLImageElement;
 				if (index === currentIndex) {
-					imageElement.style.transform = "scale(1.15)";
+					imageElement.style.transform = "scale(1)";
 				} else {
-					imageElement.style.transform = "scale(0.85)";
+					imageElement.style.transform = "scale(0.70)";
 				}
 			});
 			currentIndex = (currentIndex + 1) % images.length;
@@ -107,11 +107,55 @@ function HeroSection() {
 						<img width={350} height={400} src={Iphone} alt="mid-iphone" />
 					</section>
 					<section className="image-container-topsection">
-						<img className="zoomIn" src={menu} alt="Menu" />
-						<img className="zoomIn" src={Services} alt="Services" />
-						<img className="zoomIn" src={Pie} alt="Pie" />
+						<img
+							className="zoomIn"
+							width={110}
+							height={110}
+							src={Services}
+							alt="Services"
+						/>
+
+						<img
+							width={110}
+							height={110}
+							className="zoomIn"
+							src={Pie}
+							alt="Pie"
+						/>
+
+						<img
+							width={110}
+							height={110}
+							className="zoomIn"
+							src={menu}
+							alt="Menu"
+						/>
+					</section>
+					<section className="image-container-topsection_text">
+						<article className="zoomIn">
+							<span>
+								Grow presence for restaurant
+								<span className="opacity"> with your own WebApp</span>
+							</span>
+						</article>
+						<article className="zoomIn">
+							<span>
+								Restaurant’s direct
+								<span className="opacity">Coupons & Loyalty</span>
+							</span>
+						</article>
+						<article className="zoomIn">
+							<span>
+								Best digital menu
+								<span className="opacity">
+									{" "}
+									advanced customization, fast and easy to use{" "}
+								</span>
+							</span>
+						</article>
 					</section>
 				</center>
+				
 			</section>
 		</section>
 	);

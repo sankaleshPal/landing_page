@@ -17,7 +17,7 @@
 .flex_container_service img {
   width: 360px;
   height: 340px;
-  margin-left: -3rem;
+  rotate: 60deg;
 }
 
 .flex_container_service ul li {
@@ -74,7 +74,9 @@
   .flex_container_service img {
     width: 600px;
     height: 550px;
+    rotate: 0deg;
   }
+
 
   .flex_container_service figcaption {
     width: 40%;

@@ -30,6 +30,56 @@ function App() {
 					<div className="hide_mobile">
 						<Restaurant />
 					</div>
+					<section
+						style={{
+							margin: "5rem 0 2rem 0",
+						}}
+						className="show_mobile"
+					>
+						<center
+							style={{
+								margin: "3rem 0 1rem 0",
+								fontSize: "1.5rem",
+								fontWeight: "200",
+								color: "#A1C9FF",
+							}}
+						>
+							What can you do with &nbsp;
+							<br />
+							<span
+								style={{
+									fontSize: "1.5rem",
+								}}
+								className="title"
+							>
+								HipalZ ?
+							</span>
+						</center>
+						<center>
+							<video
+								style={{
+									margin: "3rem 0",
+								}}
+								width="250"
+								height="500"
+								loop
+								muted
+								autoPlay
+							>
+								<source src="/fin.mp4" type="video/mp4" />
+								Your browser does not support the video tag.
+							</video>
+						</center>
+						<center
+							style={{
+								fontSize: "1.5rem",
+								fontWeight: "500",
+								color: "#A1C9FF",
+							}}
+						>
+							Aesthetically <br /> designed menus
+						</center>
+					</section>
 					<EcoSystems />
 					<Auto />
 					<UserExp />

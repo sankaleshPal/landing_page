@@ -3,7 +3,7 @@
 position: relative;
 display: flex;
 flex-direction: column;
-margin-top: 1.5rem;
+margin-top: 2rem;
 }
 
 .footer_container_love_cont {
@@ -51,6 +51,7 @@ margin-top: 1.5rem;
     .footer_container {
         flex-direction: row;
         justify-content: space-between;
+        margin-top: 5rem;
     }
 
     .footer_container_hipal_Logo {
