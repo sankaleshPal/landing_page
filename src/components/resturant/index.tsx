@@ -2,7 +2,6 @@ import RestaurantImage from "../../assets/restaurant/rest.svg";
 import TwoIphones from "../../assets/mid_section/twoiphones.png";
 import Calender from "../../assets/mid_section/calendar.png";
 import Loyalty from "../../assets/mid_section/loyalty.png";
-import Mobile from "../../assets/mid_section//Mobile.png";
 import Services from "../../assets/mid_section/services.png";
 import Smart from "../../assets/mid_section/smart selling.png";
 import Text from "../../assets/text.png";
