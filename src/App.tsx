@@ -21,7 +21,7 @@ function App() {
 						Contact us
 					</button>
 				</section>
-				<section className="hide_mobile" style={{ position: "relative" }}>
+				<section style={{ position: "relative" }}>
 					<Suspense fallback={<Loader />}>
 						<HeroSection />
 					</Suspense>
