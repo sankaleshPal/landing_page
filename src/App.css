@@ -208,7 +208,7 @@ background: -webkit-linear-gradient(270deg, hsla(320, 60%, 48%, 1) 0%, hsla(216,
 
 @media (min-width: 768px) {
   main {
-    margin: 2rem 18vw;
+    margin: 2rem 15vw;
     position: relative;
     overflow: hidden;
   }

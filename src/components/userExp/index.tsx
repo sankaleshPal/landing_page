@@ -54,8 +54,8 @@ const UserExp = () => {
 
 					<img
 						className={isInView ? "fadeInRight" : ""}
-						width={250}
-						height={250}
+						width={460}
+						height={420}
 						src={MenuSec}
 						alt="Two iPhones displaying the Hipalz app"
 					/>

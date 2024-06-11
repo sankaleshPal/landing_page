@@ -45,8 +45,8 @@ const EcoSystems = () => {
 
 					<img
 						className={isInView ? "fadeInRight" : ""}
-						width={250}
-						height={250}
+						width={360}
+						height={360}
 						src={Twoiphones}
 						alt="Two iPhones displaying the Hipalz app"
 					/>

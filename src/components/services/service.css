@@ -9,6 +9,8 @@
   position: relative;
   z-index: 1;
   display: flex;
+  justify-items: center;
+  align-items: center;
   flex-direction: column-reverse;
 }
 

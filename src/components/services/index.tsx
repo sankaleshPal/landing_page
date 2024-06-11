@@ -62,8 +62,8 @@ const Services = () => {
 					
 					<img
 						className={isInView ? "fadeInLeft" : ""}
-						width={250}
-						height={250}
+						width={360}
+						height={340}
 						src={ServicesImg}
 						alt="Two iPhones displaying the Hipalz app"
 					/>

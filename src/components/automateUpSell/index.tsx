@@ -55,8 +55,8 @@ const Auto = () => {
 
 					<img
 						className={isInView ? "fadeInLeft" : ""}
-						width={250}
-						height={250}
+						width={360}
+						height={360}
 						src={Calender}
 						alt="Two iPhones displaying the Hipalz app"
 					/>
