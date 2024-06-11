@@ -18,22 +18,29 @@ main {
 }
 
 
-.nav_bar {
-  position: sticky;
-  top: 0;
+.nav_bar_logo {
+  position: fixed;
+  top: 1rem;
   z-index: 100;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 1rem 0;
 }
+.nav_bar_logo_mobile {
+  padding: 3rem 0 0 0;
+  margin-bottom: -2rem;
+}
+
 
 .nav_btn {
-  background: #9855BA;
+  background: #4990FB;
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 16px;
   font-size: 1rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+  border: none;
 }
 
 .title {
@@ -58,8 +65,11 @@ main {
   color: #A1C9FF;
   font-weight: 300;
   position: relative;
+  width: 70%;
   z-index: 1;
-  margin-top: -1.5rem;
+  margin-top: -2rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.25rem;
   animation: fadeInDown 1s ease-in-out;
 }
 
@@ -141,6 +151,7 @@ main {
   justify-content: space-between;
   gap: 24px;
   margin-top: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 

@@ -15,12 +15,25 @@ function App() {
 	return (
 		<Suspense fallback={<Loader />}>
 			<main>
-				<section className="nav_bar">
-					<img width={60} height={60} src={Logo} alt="Logo" />
-					<button type="button" className="nav_btn">
-						Contact us
-					</button>
-				</section>
+				<center>
+					<img
+						className="nav_bar_logo_mobile show_mobile"
+						width={30}
+						height={30}
+						src={Logo}
+						alt="Logo"
+					/>
+				</center>
+				<img
+					className="nav_bar hide_mobile"
+					width={60}
+					height={60}
+					src={Logo}
+					alt="Logo"
+				/>
+				<button type="button" className="nav_btn hide_mobile">
+					Contact us
+				</button>
 				<section style={{ position: "relative" }}>
 					<Suspense fallback={<Loader />}>
 						<HeroSection />
@@ -32,10 +45,27 @@ function App() {
 					</div>
 					<section
 						style={{
-							margin: "5rem 0 2rem 0",
+							margin: "3rem 0 2rem 0",
 						}}
 						className="show_mobile"
 					>
+						<center>
+							<button
+								type="button"
+								style={{
+									backgroundColor: "#4990FB",
+									color: "white",
+									border: "none",
+									padding: "0.5rem 1rem",
+									borderRadius: "3rem",
+									width: "85%",
+									margin: "0 auto",
+									maxWidth: "30rem",
+								}}
+							>
+								Contact us
+							</button>
+						</center>
 						<center
 							style={{
 								margin: "3rem 0 1rem 0",
@@ -77,7 +107,8 @@ function App() {
 								color: "#A1C9FF",
 							}}
 						>
-							Aesthetically <br /> designed menus
+							Engage your customers <br />
+							Directly
 						</center>
 					</section>
 					<EcoSystems />

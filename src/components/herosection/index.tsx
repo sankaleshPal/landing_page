@@ -133,29 +133,46 @@ function HeroSection() {
 					</section>
 					<section className="image-container-topsection_text">
 						<article className="zoomIn">
-							<span>
+							<div
+								style={{
+									textAlign: "left",
+									fontSize: "0.75rem",
+									width: "70%",
+								}}
+							>
 								Grow presence for restaurant
 								<span className="opacity"> with your own WebApp</span>
-							</span>
+							</div>
 						</article>
 						<article className="zoomIn">
-							<span>
+							<div
+								style={{
+									textAlign: "left",
+									fontSize: "0.75rem",
+									width: "70%",
+								}}
+							>
 								Restaurant’s direct
-								<span className="opacity">Coupons & Loyalty</span>
-							</span>
+								<span className="opacity"> Coupons & Loyalty</span>
+							</div>
 						</article>
 						<article className="zoomIn">
-							<span>
+							<div
+								style={{
+									textAlign: "left",
+									fontSize: "0.75rem",
+									width: "70%",
+								}}
+							>
 								Best digital menu
 								<span className="opacity">
 									{" "}
 									advanced customization, fast and easy to use{" "}
 								</span>
-							</span>
+							</div>
 						</article>
 					</section>
 				</center>
-				
 			</section>
 		</section>
 	);
