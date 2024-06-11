@@ -30,6 +30,14 @@
   text-align: left;
 }
 
+
+@media (max-width: 767px) {
+  .auto_container {
+    background-size: auto 150%; 
+    background-position: top center; 
+  }
+}
+
 @media (min-width: 768px) {
   .flex_container_auto img {
     width: 300px;
@@ -51,7 +59,9 @@
 @media (min-width: 1024px) {
   .auto_container {
     max-width: 1275px;
-    max-height: 608px;}
+    max-height: 608px;
+  }
+
   .flex_container_auto {
     flex-direction: row-reverse;
     align-items: center;

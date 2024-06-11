@@ -1,0 +1,63 @@
+
+.footer_container {
+position: relative;
+display: flex;
+flex-direction: column;
+margin-top: 1.5rem;
+}
+
+.footer_container_love_cont {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+}
+
+.footer_container_love {
+    width: 100%;
+    height: auto;
+    max-width: 520px;
+    max-height: 350px;
+    object-fit: cover; 
+}
+
+.footer_container_hipal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 20px;
+}
+
+.footer_container_hipal_Logo {
+    width: 50%;
+    height: auto;
+    max-width: 520px;
+    max-height: 350px;
+    object-fit: cover; 
+    margin-top: 1.5rem;
+}
+
+
+.footer_container_hipal_img {
+    border: 1px solid #fff;
+    padding: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media (min-width:768px) {
+    .footer_container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer_container_hipal_Logo {
+        width: 100%;
+       
+    }
+    .footer_container_hipal_img {
+        padding: 24px;
+    }
+}

@@ -1,12 +1,12 @@
 .eco_container {
-  max-width: 1275px;
-  max-height: 608px;
+ 
   width: 100%;
   height: auto;
   position: relative;
   margin: 0 auto;
   overflow: hidden;
 }
+
 
 .flex_container_eco {
     position: relative;
@@ -33,6 +33,13 @@
     text-align: left;
   }
 
+  @media (max-width: 767px) {
+    .eco_container {
+      background-size: auto 150%; 
+      background-position: top center; 
+    }
+  }
+
   @media (min-width: 768px) {
     .flex_container_eco img {
       width: 300px;
@@ -52,10 +59,14 @@
   }
 
   @media (min-width: 1024px) {
+    .eco_container {
+      max-width: 1275px;
+      max-height: 608px;
+    }
     .flex_container_eco {
       align-items: center;
       justify-content: space-between;
-      flex-direction: row-reverse;
+      flex-direction: row;
     }
     .flex_container_eco img {
       width: 500px;

@@ -1,6 +1,4 @@
 .service_container {
-  max-width: 1275px;
-  max-height: 608px;
   width: 100%;
   height: auto;
   position: relative;
@@ -50,7 +48,20 @@
   }
 }
 
+@media (max-width: 767px) {
+  .service_container {
+    background-size: auto 150%; 
+    background-position: top center; 
+  }
+}
+
+
 @media (min-width: 1024px) {
+
+  .service_container {
+    max-width: 1275px;
+    max-height: 608px;
+  }
   .flex_container_service {
     align-items: center;
     justify-content: space-between;

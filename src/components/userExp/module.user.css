@@ -1,6 +1,4 @@
 .user_container {
-  max-width: 1275px;
-  max-height: 608px;
   width: 100%;
   height: auto;
   position: relative;
@@ -10,6 +8,8 @@
 .flex_container_user {
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .flex_container_user img {
@@ -28,6 +28,12 @@
   font-weight: 300;
   line-height: 1.6;
   text-align: left;
+}
+@media (max-width: 767px) {
+  .user_container {
+    background-size: auto 150%; 
+    background-position: top center; 
+  }
 }
 
 @media (min-width: 768px) {
@@ -49,14 +55,19 @@
 }
 
 @media (min-width: 1024px) {
+  .user_container {
+    max-width: 1275px;
+    max-height: 608px;
+  }
+
   .flex_container_user {
-    display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row;
   }
   .flex_container_user img {
-    width: 500px;
-    height: 650px;
+    width: 600px;
+    height: 550px;
   }
 
   .flex_container_user figcaption {

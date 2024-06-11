@@ -3,6 +3,7 @@ import Call from "../../assets/footer/call.png";
 import Email from "../../assets/footer/gmail.png";
 import Love from "../../assets/footer/made_love.png";
 import Hipal from "../../assets/footer/big_hipal.png";
+import "./footer.css";
 
 const Footer = () => {
 	const handleWhatsAppClick = () => {
@@ -12,37 +13,29 @@ const Footer = () => {
 	const handleCallClick = () => {
 		alert("Call us at: +91 91779 14130");
 	};
- 
+
 	return (
-		<section
-			style={{
-				position: "relative",
-				marginTop: "100px",
-				display: "flex",
-				justifyContent: "space-between",
-				alignItems: "center",
-			}}
-		>
-			<section>
-				<img src={Love} alt="Made with love" />
+		<section className="footer_container">
+			<section className="footer_container_love_cont">
+				<img
+					className="footer_container_love"
+					width={520}
+					height={350}
+					src={Love}
+					alt="Made with love"
+				/>
 			</section>
 			<section>
-				<img src={Hipal} alt="Hipal logo" />
-				<section
-					style={{
-						display: "flex",
-						justifyContent: "space-around",
-						alignItems: "center",
-						margin: "48px 20px",
-					}}
-				>
+				<section className="footer_container_love_cont">
 					<img
-						style={{
-							border: "1px solid #fff",
-							padding: "24px",
-							borderRadius: "50%",
-							cursor: "pointer",
-						}}
+						className="footer_container_hipal_Logo"
+						src={Hipal}
+						alt="Hipal logo"
+					/>
+				</section>
+				<section className="footer_container_hipal">
+					<img
+						className="footer_container_hipal_img"
 						width={30}
 						height={30}
 						src={WhatsApp}
@@ -50,24 +43,14 @@ const Footer = () => {
 						onClick={handleWhatsAppClick}
 					/>
 					<img
-						style={{
-							border: "1px solid #fff",
-							padding: "24px",
-							borderRadius: "50%",
-							cursor: "pointer",
-						}}
+						className="footer_container_hipal_img"
 						width={30}
 						height={30}
 						src={Email}
 						alt="Email"
 					/>
 					<img
-						style={{
-							border: "1px solid #fff",
-							padding: "24px",
-							borderRadius: "50%",
-							cursor: "pointer",
-						}}
+						className="footer_container_hipal_img"
 						width={30}
 						height={30}
 						src={Call}
