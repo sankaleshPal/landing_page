@@ -19,33 +19,12 @@ const Services = () => {
 				style={{
 					backgroundImage: `url(${Background})`,
 					backgroundRepeat: "no-repeat",
-					width: "1275px",
-					height: "608px",
-					position: "relative",
-					margin: "0 auto",
-					overflow: "hidden",
 				}}
+				className="service_container"
 			>
 				<figure className="flex_container_service" ref={ref}>
-					<figcaption
-						style={{
-							width: "40%",
-							textAlign: "left",
-							paddingLeft: "5rem",
-							lineHeight: "1.6",
-						}}
-						className={`${isInView ? "fadeInRight" : ""}`}
-					>
-						<h3
-							style={{
-								fontSize: "2rem",
-								fontWeight: "300",
-								color: "#FFFBA1",
-								lineHeight: "1.6",
-							}}
-						>
-							Building an Ecosystem
-						</h3>
+					<figcaption className={`${isInView ? "fadeInRight" : ""}`}>
+						<h3>Building an Ecosystem</h3>
 						<ul>
 							<li>
 								Promotional Banners: &nbsp;
@@ -81,7 +60,7 @@ const Services = () => {
 							</li>
 						</ul>
 					</figcaption>
-
+					
 					<img
 						className={isInView ? "fadeInLeft" : ""}
 						width={250}

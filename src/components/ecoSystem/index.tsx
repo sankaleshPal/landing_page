@@ -6,7 +6,7 @@ import "./module.eco.css";
 
 const EcoSystems = () => {
 	const ref = useRef(null);
-	const isInView = useInView(ref,{once:true});
+	const isInView = useInView(ref, { once: true });
 
 	return (
 		<section
@@ -19,33 +19,12 @@ const EcoSystems = () => {
 				style={{
 					backgroundImage: `url(${Background})`,
 					backgroundRepeat: "no-repeat",
-					width: "1275px",
-					height: "608px",
-					position: "relative",
-					margin: "0 auto",
-					overflow: "hidden",
 				}}
+				className="eco_container"
 			>
-				<figure className="flex_container" ref={ref}>
-					<figcaption
-						style={{
-							width: "40%",
-							textAlign: "left",
-							paddingLeft: "5rem",
-							lineHeight: "1.6", // Added line height for better readability
-						}}
-						className={`${isInView ? "fadeInLeft" : ""}`}
-					>
-						<h3
-							style={{
-								fontSize: "2rem",
-								fontWeight: "300",
-								color: "#FFFBA1",
-								lineHeight: "1.6", // Added line height for better readability
-							}}
-						>
-							Build a digital ecosystem that connects
-						</h3>
+				<figure className="flex_container_eco" ref={ref}>
+					<figcaption className={`${isInView ? "fadeInLeft" : ""}`}>
+						<h3>Build a digital ecosystem that connects</h3>
 						<ul>
 							<li>
 								Connects O2O: &nbsp;

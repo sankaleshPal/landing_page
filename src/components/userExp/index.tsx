@@ -19,33 +19,12 @@ const UserExp = () => {
 				style={{
 					backgroundImage: `url(${Background})`,
 					backgroundRepeat: "no-repeat",
-					width: "1275px",
-					height: "608px",
-					position: "relative",
-					margin: "0 auto",
-					overflow: "hidden",
 				}}
+				className="user_container"
 			>
 				<figure className="flex_container_user" ref={ref}>
-					<figcaption
-						style={{
-							width: "40%",
-							textAlign: "left",
-							paddingLeft: "5rem",
-							lineHeight: "1.6", 
-						}}
-						className={`${isInView ? "fadeInLeft" : ""}`}
-					>
-						<h3
-							style={{
-								fontSize: "2rem",
-								fontWeight: "300",
-								color: "#FFFBA1",
-								lineHeight: "1.6", 
-							}}
-						>
-							User Experience
-						</h3>
+					<figcaption className={`${isInView ? "fadeInLeft" : ""}`}>
+						<h3>User Experience</h3>
 						<ul>
 							<li>
 								User-Friendly Layout: &nbsp;

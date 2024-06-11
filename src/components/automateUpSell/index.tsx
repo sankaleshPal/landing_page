@@ -19,33 +19,12 @@ const Auto = () => {
 				style={{
 					backgroundImage: `url(${Background})`,
 					backgroundRepeat: "no-repeat",
-					width: "1275px",
-					height: "608px",
-					position: "relative",
-					margin: "0 auto",
-					overflow: "hidden",
 				}}
+				className="auto_container"
 			>
 				<figure className="flex_container_auto" ref={ref}>
-					<figcaption
-						style={{
-							width: "40%",
-							textAlign: "left",
-							paddingLeft: "5rem",
-							lineHeight: "1.6",
-						}}
-						className={`${isInView ? "fadeInRight" : ""}`}
-					>
-						<h3
-							style={{
-								fontSize: "2rem",
-								fontWeight: "300",
-								color: "#FFFBA1",
-								lineHeight: "1.6",
-							}}
-						>
-							Automate up-selling 
-						</h3>
+					<figcaption className={`${isInView ? "fadeInRight" : ""}`}>
+						<h3>Automate up-selling</h3>
 						<ul>
 							<li>
 								People buy what they see: &nbsp;
