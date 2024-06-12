@@ -7,6 +7,7 @@ import Pie from "../../assets/topsection/pie.svg";
 import Services from "../../assets/topsection/set.svg";
 
 function HeroSection() {
+	
 	useEffect(() => {
 		const images = document.querySelectorAll(".image-container-topsection img");
 		let currentIndex = 0;
@@ -23,10 +24,10 @@ function HeroSection() {
 			currentIndex = (currentIndex + 1) % images.length;
 		}
 
-		const intervalId = setInterval(scaleImages, 2000); // Change image every 2 seconds
-		scaleImages(); // Initial call to set the first image
+		const intervalId = setInterval(scaleImages, 2000); 
+		scaleImages(); 
 
-		return () => clearInterval(intervalId); // Cleanup interval on component unmount
+		return () => clearInterval(intervalId);
 	}, []);
 
 	return (
@@ -40,7 +41,7 @@ function HeroSection() {
 			<center>
 				<h1 className="title">HipalZ</h1>
 				<h3 className="title_description">
-					Everything your restaurant needz to create a a great experience with
+					Everything your restaurant needz to create a great experience with
 					your customers
 				</h3>
 			</center>
