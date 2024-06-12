@@ -265,7 +265,6 @@ main {
   main {
     margin: 2rem 15vw;
     position: relative;
-    overflow: hidden;
   }
   .title{
     font-size: 5rem;
