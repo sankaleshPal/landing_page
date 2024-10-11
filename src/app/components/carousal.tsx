@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from 'react'
-import Image from 'next/image'
+import Image,{StaticImageData} from 'next/image'
 
-const Carousel = ({ slides }) => {
+const Carousel = ({ slides }:{slides:StaticImageData[]}) => {
     const [currentIndex, setCurrentIndex] = useState(0)
 
     const nextSlide = () => {
