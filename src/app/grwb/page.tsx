@@ -1,10 +1,10 @@
 import dynamic from "next/dynamic";
+import Navbar from "../components/navbar";
 
 const ClaimCoinzSection = dynamic(
 	() => import("@/app/components/claimPointsSection"),
 );
 const Footer = dynamic(() => import("@/app/components/footer"));
-const Navbar = dynamic(() => import("@/app/components/header"));
 const HeroSection = dynamic(() => import("@/app/components/heroSection"));
 const MidSection = dynamic(() => import("@/app/components/midSection"));
 const SharksRoute = dynamic(() => import("@/app/components/sharksRoute"));
@@ -18,9 +18,11 @@ export async function generateMetadata() {
 	};
 }
 const Grwb = () => {
-  return (
-    <main className="overflow-hidden">
-			<Navbar />
+	return (
+		<main className="md:overflow-hidden pb-[2rem]">
+			<section className="sticky !z-[100] top-0 bg-[#14093E] h-[4rem] lg:h-[8rem] backdrop-blur-xl">
+				<Navbar />
+			</section>
 			{/* <div
 				style={{
 					display: "flex",
@@ -63,7 +65,7 @@ const Grwb = () => {
 			<Tokenomics />
 			<Footer />
 		</main>
-  )
+	)
 }
 
 export default Grwb

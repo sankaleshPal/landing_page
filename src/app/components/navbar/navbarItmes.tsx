@@ -3,12 +3,14 @@ import React, { memo } from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 
-const items = ["Whitepaper", "Contribute Now", "Sealed (Coming Soon)"];
+const items = ["Home","Whitepaper", "Contribute Now", "Sealed (Coming Soon)"];
 const MemoNavbarItems = () => {
     const router = useRouter();
      
     const navigateTo = (item: string) => {
-        console.log(item);
+        if(item === 'Home'){
+            router.push('/')
+        }
         if (item === 'Whitepaper') {
             router.push('https://greatrwbs-organization.gitbook.io/grwb-whitepaper');
         }
